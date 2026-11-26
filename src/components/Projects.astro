@@ -1,3 +1,4 @@
+
 ---
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
@@ -14,43 +15,53 @@ const { projects } = Astro.props;
   {
     projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
       const top = 98 + index * 40;
+
       return (
         <div
           style={`top: ${top}px;`}
           class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
         >
           <div class="bg-difu relative z-1 grid h-145 w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-size-[128px] before:bg-repeat before:opacity-5 before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
+
+            {/* Project Details */}
             <div class="px-6 pt-12">
               <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
                 {name}
               </h3>
-              <p class="text-base text-neutral">{summary}</p>
-             
-<div class="flex gap-5 pt-10 text-white">
-  {linkSource && (
-    <a
-      href={linkSource}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
-    >
-      Source
-    </a>
-  )}
 
-  {linkPreview && (
-    <a
-      href={linkPreview}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
-    >
-      Preview
-    </a>
-  )}
-</div>
+              <p class="text-base text-neutral">
+                {summary}
+              </p>
 
+              {/* Show links only when URLs are available */}
+              {(linkSource || linkPreview) && (
+                <div class="flex gap-5 pt-10 text-white">
+                  {linkSource && (
+                    <a
+                      href={linkSource}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Source
+                    </a>
+                  )}
+
+                  {linkPreview && (
+                    <a
+                      href={linkPreview}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="after:relative after:-bottom-1.25 after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Preview
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
+
+            {/* Project Image */}
             <div class="flex items-end justify-end overflow-hidden">
               <Image
                 class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-top-left sm:h-[85%] sm:w-full"
@@ -60,6 +71,7 @@ const { projects } = Astro.props;
                 height="483"
               />
             </div>
+
           </div>
         </div>
       );
