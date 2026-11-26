@@ -7,7 +7,7 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "Information Technology student at Pune Institute of Computer Technology, passionate about software development, databases, and Artificial Intelligence.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/foundit_photo_profile.jpeg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
