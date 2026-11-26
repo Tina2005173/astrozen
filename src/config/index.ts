@@ -56,24 +56,26 @@ export const SITE_CONTENT: SiteContent = {
     },
   ],
 
-  projects: [
-    {
-      name: "DentalAI",
-      summary:
-        "An AI-powered dental assessment web application featuring dental image uploads, patient assessment forms, visit history, and interactive dashboards. Built using React.js, TypeScript, Docker, and GitHub Actions.",
-      linkPreview: "/",
-      linkSource: "https://github.com/Tina2005173",
-      image: "public/dental_portfolio.jpg",
-    },
-    {
-      name: "Personal Finance Management System",
-      summary:
-        "A PHP and MongoDB-based personal finance tracker to manage income, expenses, and budgets. Includes database triggers, views, stored procedures, overspending alerts, and analytical reports.",
-      linkPreview: "/",
-      linkSource: "https://github.com/PurvaPotabatti/PersonalFinance.git",
-      image: "public/personal_finanace_image.jpg",
-    },
-  ],
+  
+projects: [
+  {
+    name: "DentalAI",
+    summary:
+      "An AI-powered dental assessment web application featuring dental image uploads, patient assessment forms, visit history, and interactive dashboards. Built using React.js, TypeScript, Docker, and GitHub Actions.",
+    linkPreview: "",
+    linkSource: "",
+    image: "/dental_portfolio.jpg",
+  },
+  {
+    name: "Personal Finance Management System",
+    summary:
+      "A PHP and MongoDB-based personal finance tracker to manage income, expenses, and budgets. Includes database triggers, views, stored procedures, overspending alerts, and analytical reports.",
+    linkPreview: "",
+    linkSource: "https://github.com/PurvaPotabatti/PersonalFinance",
+    image: "/personal_finanace_image.jpg",
+  },
+],
+
 
   about: {
     description: `
