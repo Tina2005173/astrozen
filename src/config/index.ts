@@ -63,15 +63,15 @@ export const SITE_CONTENT: SiteContent = {
         "An AI-powered dental assessment web application featuring dental image uploads, patient assessment forms, visit history, and interactive dashboards. Built using React.js, TypeScript, Docker, and GitHub Actions.",
       linkPreview: "/",
       linkSource: "https://github.com/Tina2005173",
-      image: "/dental_portfolio.jpg",
+      image: "public/dental_portfolio.jpg",
     },
     {
       name: "Personal Finance Management System",
       summary:
         "A PHP and MongoDB-based personal finance tracker to manage income, expenses, and budgets. Includes database triggers, views, stored procedures, overspending alerts, and analytical reports.",
       linkPreview: "/",
-      linkSource: "https://github.com/Tina2005173",
-      image: "/personal_finanace_image.jpg",
+      linkSource: "https://github.com/PurvaPotabatti/PersonalFinance.git",
+      image: "public/personal_finanace_image.jpg",
     },
   ],
 
